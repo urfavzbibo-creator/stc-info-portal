@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e3e0ec;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a2b75;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+/* Banner Styling */
+.banner {
+    width: 100%;
+    height: 300px;
+    /* Replace the URL below with your actual building image */
+    background: url('https://via.placeholder.com/1200x300') no-repeat center center;
+    background-size: cover;
+}
+
+/* Quick Access Section */
+.quick-access-section {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.quick-access-section h2 {
+    color: #4a2b75;
+    margin-bottom: 20px;
+}
+
+/* 4-Column Grid System */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Individual Grid Buttons */
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #4a2b75, #9b3d71);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.grid-item:hover {
+    transform: scale(1.02);
+    background: linear-gradient(90deg, #5b358e, #b84785);
+}
+
+.grid-item .icon {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.grid-item .title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
